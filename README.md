@@ -29,4 +29,8 @@ The primary focus of development will be to learn various technologies in use in
 |---|---|---|
 |6.7.2020|Setup|3h|
 |7.7.2020|Setup, validation, documentation|5h|
-|Total|--|8h|
+|8.7.2020|Troubleshooting JSON errors|1h|
+|--|Drafting schema|1h|
+|--|Designing & testing out layouts|2h|
+|--|Component structure|30m|
+|Total|--|12h30m|
