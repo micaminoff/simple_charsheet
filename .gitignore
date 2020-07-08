@@ -5,3 +5,7 @@ build/
 # Config files
 .eslintrc
 .eslintignore
+
+# Dev files
+App.css
+App.css.map
