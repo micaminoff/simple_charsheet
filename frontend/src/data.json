@@ -1,0 +1,62 @@
+{"characters": [
+    {
+        "name": "Beorn",
+        "level": 15,
+        "race": "Human",
+        "class": "Ranger",
+        "inspiration": 1,
+        "background": "Wanderer",
+        "alignment": "Lawful Neutral",
+        "xp": 6000,
+        "proficiency_bonus": 4,
+        "ac": 19,
+        "speed": 45,
+        "hit_points": {
+            "max": 60,
+            "current": 60
+        },
+        "abilities": {
+            "str": 18,
+            "dex": 15,
+            "con": 10,
+            "int": 13,
+            "wis": 15,
+            "cha": 9
+        },
+        "proficiencies": {
+            "str": 0,
+            "dex": 1,
+            "con": 0,
+            "int": 0,
+            "wis": 1,
+            "cha": 0,
+
+            "acrobatics": 0,
+            "animal_handling": 1,
+            "arcana": 0,
+            "athletics": 1,
+            "deception": 0,
+            "history": 0,
+            "insight": 0,
+            "intimidation": 0,
+            "investigation": 0,
+            "medicine": 1,
+            "nature": 1,
+            "perception": 1,
+            "performance": 0,
+            "persuasion": 0,
+            "religion": 0,
+            "sleight_of_hand": 0,
+            "stealth": 1,
+            "survival": 1
+        },
+        "hit_dice": {
+            "count": 4,
+            "dice": "d6"
+        },
+        "death_saves": {
+            "successes": 0,
+            "failures": 0
+        }
+    }
+]}

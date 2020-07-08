@@ -1,10 +1,10 @@
 import React from 'react'
 
-export interface AttrProps {
+export interface Props {
     attr: string;
 }
 
-const AttributeBox = ({attr}: AttrProps) => (
+const AttributeBox = ({attr}: Props) => (
     <div className='attribute_box level-item has-text-centered'>
         {attr}
     </div>
