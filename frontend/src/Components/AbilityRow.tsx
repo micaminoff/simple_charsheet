@@ -2,7 +2,7 @@ import React from 'react';
 import AbilityBox from './AbilityBox';
 import { abilities } from '../Types';
 
-interface Props {
+export interface Props {
     abilities: abilities;
 }
 

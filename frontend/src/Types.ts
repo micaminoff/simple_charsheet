@@ -44,8 +44,9 @@ export interface proficiencies {
 };
 
 export interface hit_dice {
-    count?: number;
+    max?: number;
     dice?: string;
+    remaining?: number;
 };
 
 export interface death_saves {
@@ -70,4 +71,6 @@ export interface character {
     proficiencies: proficiencies;
     hit_dice: hit_dice;
     death_saves: death_saves;
+    languages: string[];
+    initiative?: number;
 }

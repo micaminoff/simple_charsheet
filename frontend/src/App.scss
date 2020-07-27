@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 $family-sans-serif: 'Karla', sans-serif;
+$dark: #363636;
 
 .skill_box {
     padding: 2px 0;
@@ -9,7 +10,18 @@ $family-sans-serif: 'Karla', sans-serif;
 
 .ability_box {
     flex-direction: column;
-    border: medium solid #363636;
+    border: medium solid $dark;
+}
+
+.health_box {
+    border: thin solid $dark;
+
+    .health_part {
+        border-bottom: thin solid $dark;
+    }
+    .dice_part {
+        border-bottom: thin solid $dark;
+    }
 }
 
 @import "../node_modules/bulma/bulma.sass";
