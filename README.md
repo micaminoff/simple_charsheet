@@ -38,4 +38,5 @@ The primary focus of development will be to learn various technologies in use in
 |24.7.2020|Better typing structure|1h30m|
 |--|Rename variables and components|20m|
 |27.7|Props propagation & styling|1h10m|
-|Total|--|17h30m|
+|--|HP and Character info sections|1h5m|
+|Total|--|18h35m|
