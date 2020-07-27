@@ -7,4 +7,9 @@ $family-sans-serif: 'Karla', sans-serif;
     padding: 2px 0;
 }
 
+.ability_box {
+    flex-direction: column;
+    border: medium solid #363636;
+}
+
 @import "../node_modules/bulma/bulma.sass";

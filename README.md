@@ -33,4 +33,9 @@ The primary focus of development will be to learn various technologies in use in
 |--|Drafting schema|1h|
 |--|Designing & testing out layouts|2h|
 |--|Component structure|30m|
-|Total|--|12h30m|
+|9.7.2020|Typing for Character class|30m|
+|--|Instance creation from JSON|1h30m|
+|24.7.2020|Better typing structure|1h30m|
+|--|Rename variables and components|20m|
+|27.7|Props propagation & styling|1h10m|
+|Total|--|17h30m|

@@ -3,7 +3,7 @@
         "name": "Beorn",
         "level": 15,
         "race": "Human",
-        "class": "Ranger",
+        "dnd_class": "Ranger",
         "inspiration": 1,
         "background": "Wanderer",
         "alignment": "Lawful Neutral",
@@ -11,7 +11,7 @@
         "proficiency_bonus": 4,
         "ac": 19,
         "speed": 45,
-        "hit_points": {
+        "hp": {
             "max": 60,
             "current": 60
         },

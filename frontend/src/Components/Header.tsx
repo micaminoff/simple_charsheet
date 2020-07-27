@@ -2,10 +2,10 @@ import React from 'react';
 
 export interface Props {
     name: string;
-    level: number;
-    race: string;
+    level?: number;
+    race?: string;
     // silly protected words
-    dnd_class: string;
+    dnd_class?: string;
 }
 
 const Header = ({ name, level, race, dnd_class }: Props) => (
