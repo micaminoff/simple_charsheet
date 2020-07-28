@@ -22,4 +22,12 @@ $dark: #363636;
     }
 }
 
+.combat_stats {
+    .level {
+        .level-item {
+            flex-direction: column;
+        }
+    }
+}
+
 @import "../node_modules/bulma/bulma.sass";

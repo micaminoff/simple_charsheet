@@ -1,24 +1,17 @@
 import React from 'react'
 
 export interface Props {
-    ac?: number;
-    speed?: number;
-    inspiration?: number;
     background?: string;
     alignment?: string;
     languages?: string[];
     xp?: number;
-    initiative?: number;
+    inspiration?: number;
 }
 
-const CharacterInfo = ({ ac = 15, speed = 30, initiative, inspiration, background, alignment, languages, xp }: Props) => (
+const CharacterInfo = ({inspiration, background, alignment, languages, xp }: Props) => (
     <div className='box'>
-        <nav className='level has-text-centered'>
-            <p>{ac}</p>
-            <p>{speed}</p>
-            <p>{initiative}</p>
-            <p>{inspiration}</p>
-        </nav>
+        <p className='has-text-centered mb-1'>Character Info</p>
+        <div>Inspiration: {inspiration}</div>
         <div>XP: {xp}</div>
         <div>Background: {background}</div>
         <div>Alignment: {alignment}</div>

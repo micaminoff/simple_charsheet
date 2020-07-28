@@ -41,4 +41,5 @@ The primary focus of development will be to learn various technologies in use in
 |--|HP and Character info sections|1h5m|
 |28.7.2020|Researching and finding icons|2h|
 |--|Getting icons to work properly|3h|
-|Total|--|23h35m|
+|--|Basic structure and styling improvements|1h5m|
+|Total|--|24h40m|

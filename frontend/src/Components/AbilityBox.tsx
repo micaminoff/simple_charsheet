@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDumbbell, faUserNinja, faMedkit, faGlasses, faBookOpen, faGuitar, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
+import { faDumbbell, faUserNinja, faMedkit, faGlasses, faBookOpen, faQuestionCircle, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import { modifier } from '../Functions'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
@@ -28,19 +28,19 @@ const render_icon = (ability: string) => {
             icon = faBookOpen;
             break;
         case 'CHA':
-            icon = faGuitar;
+            icon = faCommentDots;
             break;
         default:
             icon = faQuestionCircle;
     }
     return (
-        <span className='icon'><FontAwesomeIcon icon={icon} size='lg'/></span>
-    )
+        <span className='icon'><FontAwesomeIcon icon={icon} size='2x'/></span>
+    );
 }
 
 const AbilityBox = ({ ability_name, ability_val }: Props) => (
     <div className='ability_box level-item has-text-centered'>
-        <div className='ability_mod is-size-5' title='modifier'>
+        <div className='ability_mod is-size-5 mb-1' title='modifier'>
             {
                 ability_val ? modifier(ability_val) : 0
             }

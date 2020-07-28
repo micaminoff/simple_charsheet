@@ -9,15 +9,17 @@ export interface Props {
 
 const HealthBox = ({ hp, hit_dice, death_saves }: Props) => (
     <div className='health_box box has-text-centered'>
+        <p className='mb-1'>Health</p>
         <div className='health_part'>
             <p>Max hp: {hp.max}</p>
             <p contentEditable>Current hp: {hp.current}</p>
         </div>
         <div className='dice_part'>
-            <p className='align-items-center'>Dice type: {hit_dice.dice}</p>
+            <p className='align-items-center'>Hit Dice: {hit_dice.dice}</p>
             <p>Remaining: <span contentEditable>{hit_dice.remaining}</span>/{hit_dice.max}</p>
         </div>
         <div className='death_part'>
+            <p className='mb-1'>Death saves</p>
             <p>Successes: {death_saves.successes}</p>
             <p>Failures: {death_saves.failures}</p>
         </div>
