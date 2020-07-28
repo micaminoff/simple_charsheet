@@ -9,7 +9,7 @@ interface Props {
 };
 
 const Skills = ({ proficiencies, abilities, proficiency_bonus = 3 }: Props) => (
-    <div>
+    <div className='box'>
         <nav className='level mb-2'>
             <span className='tag'>Not Proficient</span>
             <span className='tag is-warning'>Proficient</span>

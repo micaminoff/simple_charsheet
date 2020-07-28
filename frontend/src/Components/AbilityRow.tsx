@@ -7,7 +7,7 @@ export interface Props {
 }
 
 const AbilityRow = ({abilities}: Props) => (
-    <nav className='level atribute_row'>
+    <nav className='level atribute_row box'>
         <AbilityBox ability_name='STR' ability_val={abilities.str}/>
         <AbilityBox ability_name='DEX' ability_val={abilities.dex}/>
         <AbilityBox ability_name='CON' ability_val={abilities.con}/>

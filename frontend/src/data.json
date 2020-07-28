@@ -5,6 +5,7 @@
         "race": "Human",
         "dnd_class": "Ranger",
         "inspiration": 1,
+        "initiative": 2,
         "background": "Wanderer",
         "alignment": "Lawful Neutral",
         "xp": 6000,
@@ -59,6 +60,6 @@
             "successes": 0,
             "failures": 0
         },
-        "languages": ["common"]
+        "languages": ["Common"]
     }
 ]}

@@ -10,11 +10,9 @@ $dark: #363636;
 
 .ability_box {
     flex-direction: column;
-    border: medium solid $dark;
 }
 
 .health_box {
-    border: thin solid $dark;
 
     .health_part {
         border-bottom: thin solid $dark;
