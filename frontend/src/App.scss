@@ -30,4 +30,10 @@ $dark: #363636;
     }
 }
 
+.bulma_credit {
+    :hover {
+        opacity: 50%;
+    }
+}
+
 @import "../node_modules/bulma/bulma.sass";

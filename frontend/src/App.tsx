@@ -10,6 +10,7 @@ import HealthBox from './Components/HealthBox';
 import CharacterInfo from './Components/CharacterInfo';
 import CombatBox from './Components/CombatBox';
 import EditModal from './Components/EditModal';
+import Footer from './Components/Footer'
 
 
 
@@ -52,6 +53,7 @@ const App = () => {
         </div>
 
       </section>
+      <Footer />
     </div>
   )
 }

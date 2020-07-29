@@ -46,5 +46,6 @@ The primary focus of development will be to learn various technologies in use in
 |29.7.2020|Replace optional attributes with defaults|20m|
 |--|Add more missing data|25m|
 |--|Config problems|20m|
-|--|Modal|15m
-|Total|--|26h10m|
+|--|Modal|15m|
+|--|Attribution|5m|
+|Total|--|26h15m|
