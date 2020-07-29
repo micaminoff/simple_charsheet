@@ -5,7 +5,7 @@ import { abilities, proficiencies } from '../Types';
 interface Props {
     proficiencies: proficiencies
     abilities: abilities,
-    proficiency_bonus?: number
+    proficiency_bonus: number
 };
 
 const Skills = ({ proficiencies, abilities, proficiency_bonus = 3 }: Props) => (

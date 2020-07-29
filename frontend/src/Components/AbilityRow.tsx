@@ -6,7 +6,7 @@ export interface Props {
     abilities: abilities;
 }
 
-const AbilityRow = ({ abilities }: Props) => (
+const AbilityRow = ({ abilities = {str: 0, dex: 0, con: 0, int: 0, wis: 0, cha: 0} }: Props) => (
     <div className='box has-text-centered'>
         Abilities
         <nav className='level atribute_row'>

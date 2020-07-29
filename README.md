@@ -42,4 +42,5 @@ The primary focus of development will be to learn various technologies in use in
 |28.7.2020|Researching and finding icons|2h|
 |--|Getting icons to work properly|3h|
 |--|Basic structure and styling improvements|1h5m|
-|Total|--|24h40m|
+|--|Add some missing data|10m|
+|Total|--|24h50m|

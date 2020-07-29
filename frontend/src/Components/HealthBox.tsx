@@ -7,7 +7,11 @@ export interface Props {
     hit_dice: hit_dice;
 }
 
-const HealthBox = ({ hp, hit_dice, death_saves }: Props) => (
+const HealthBox = ({
+        hp = {current: 0, max: 0 },
+        hit_dice = {dice: '', max: 0, remaining: 0},
+        death_saves = {successes: 0, failures: 0}
+    }: Props) => (
     <div className='health_box box has-text-centered'>
         <p className='mb-1'>Health</p>
         <div className='health_part'>

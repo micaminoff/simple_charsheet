@@ -2,13 +2,13 @@ import React from 'react';
 
 export interface Props {
     name: string;
-    level?: number;
-    race?: string;
+    level: number;
+    race: string;
     // silly protected words
-    dnd_class?: string;
+    dnd_class: string;
 }
 
-const Header = ({ name, level, race, dnd_class }: Props) => (
+const Header = ({ name = '', level = 0, race = '', dnd_class = '' }: Props) => (
     <section className='hero is-dark'>
         <div className='hero-body'>
             <div className='container'>

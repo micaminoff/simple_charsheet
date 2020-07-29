@@ -25,7 +25,15 @@ const App = () => (
           <HealthBox hp={hero.hp} hit_dice={hero.hit_dice} death_saves={hero.death_saves}/>
         </div>
         <div className='column'>
-          <CharacterInfo inspiration={hero.inspiration} background={hero.background} alignment={hero.alignment} languages={hero.languages} xp={hero.xp}/>
+          <CharacterInfo
+            inspiration={hero.inspiration}
+            background={hero.background}
+            alignment={hero.alignment}
+            languages={hero.languages}
+            xp={hero.xp}
+            features={hero.features}
+            feats={hero.feats}
+          />
         </div>
       </div>
 

@@ -60,6 +60,13 @@
             "successes": 0,
             "failures": 0
         },
-        "languages": ["Common"]
+        "languages": ["Common"],
+        "features": ["Hardy"],
+        "feats": ["Polearm Master"],
+        "equipment": ["Plate Armor", "Longsword", "Shield"],
+        "inventory": ["Bag of Holding", "Oil Flask", "100 gp"],
+        "atk_bonus": 4,
+        "dmg_bonus": 4,
+        "dmg_die": "d8"
     }
 ]}

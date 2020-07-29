@@ -38,12 +38,10 @@ const render_icon = (ability: string) => {
     );
 }
 
-const AbilityBox = ({ ability_name, ability_val }: Props) => (
+const AbilityBox = ({ ability_name, ability_val = 0 }: Props) => (
     <div className='ability_box level-item has-text-centered'>
         <div className='ability_mod is-size-5 mb-1' title='modifier'>
-            {
-                ability_val ? modifier(ability_val) : 0
-            }
+            {modifier(ability_val)}
         </div>
         <div title={ability_name} className='ability_name'>
             {render_icon(ability_name)}

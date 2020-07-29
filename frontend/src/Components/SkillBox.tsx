@@ -3,8 +3,8 @@ import { modifier } from '../Functions'
 
 export interface Props {
     skill: string;
-    proficient?: number;
-    ability?: number;
+    proficient: number;
+    ability: number;
     bonus: number;
 }
 
