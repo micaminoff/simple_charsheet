@@ -1,6 +1,3 @@
-// 0 = not proficient, 1 = proficient, 2 = expertise
-// Death saves
-
 export interface hp {
     max: number;
     current: number;
@@ -16,6 +13,9 @@ export interface abilities {
 };
 
 export interface proficiencies {
+    // 0 = not proficient
+    // 1 = proficient
+    // 2 = expert
     str: number;
     dex: number;
     con: number;

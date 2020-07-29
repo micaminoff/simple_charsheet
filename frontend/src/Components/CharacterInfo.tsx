@@ -1,4 +1,5 @@
 import React from 'react'
+import { format_string } from '../Functions'
 
 export interface Props {
     background: string;
@@ -9,11 +10,6 @@ export interface Props {
     features: string[];
     feats: string[];
 }
-
-// Places ', ' between items in an array, but not after the last one
-const format_string = (list: string[] = []) => (
-    list.map((l, i) => i < list.length - 1 ? l + ', ' : l)
-);
 
 const CharacterInfo = ({
         inspiration = 0,

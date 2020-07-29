@@ -43,4 +43,6 @@ The primary focus of development will be to learn various technologies in use in
 |--|Getting icons to work properly|3h|
 |--|Basic structure and styling improvements|1h5m|
 |--|Add some missing data|10m|
-|Total|--|24h50m|
+|29.7.2020|Replace optional attributes with defaults|20m|
+|--|Add more missing data|25m|
+|Total|--|25h35m|

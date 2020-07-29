@@ -1,12 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDumbbell, faUserNinja, faMedkit, faGlasses, faBookOpen, faQuestionCircle, faCommentDots } from '@fortawesome/free-solid-svg-icons'
+import { faDumbbell, faUserNinja, faMedkit, faGlasses, faBookOpen, faQuestionCircle, faCommentDots, faHatWizard } from '@fortawesome/free-solid-svg-icons'
 import { modifier } from '../Functions'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
 export interface Props {
     ability_name: string;
-    ability_val?: number;
+    ability_val: number;
 }
 
 const render_icon = (ability: string) => {
@@ -22,7 +22,7 @@ const render_icon = (ability: string) => {
             icon = faMedkit;
             break;
         case 'INT':
-            icon = faGlasses;
+            icon = faHatWizard;
             break;
         case 'WIS':
             icon = faBookOpen;
