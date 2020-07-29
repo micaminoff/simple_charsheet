@@ -35,6 +35,7 @@ const App = () => (
             xp={hero.xp}
             features={hero.features}
             feats={hero.feats}
+            inventory={hero.inventory}
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDumbbell, faUserNinja, faMedkit, faGlasses, faBookOpen, faQuestionCircle, faCommentDots, faHatWizard } from '@fortawesome/free-solid-svg-icons'
+import { faDumbbell, faUserNinja, faMedkit, faBookOpen, faQuestionCircle, faCommentDots, faHatWizard } from '@fortawesome/free-solid-svg-icons'
 import { modifier } from '../Functions'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 
