@@ -9,7 +9,7 @@ import { character } from './Types';
 import HealthBox from './Components/HealthBox';
 import CharacterInfo from './Components/CharacterInfo';
 import CombatBox from './Components/CombatBox';
-import EditModal from './Components/EditModal';
+import EditModal from './Components/Edit/EditModal';
 import Footer from './Components/Footer'
 
 
@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      {show_modal  ? <EditModal modal_callback={toggle_modal}/> : ''}
+      {show_modal  ? <EditModal modal_callback={toggle_modal} character={hero}/> : ''}
       <Header name={hero.name} level={hero.level} race={hero.race} dnd_class={hero.dnd_class} modal_callback={toggle_modal} />
       <section className='section character'>
         <AbilityRow abilities={hero.abilities} />

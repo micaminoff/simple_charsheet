@@ -48,4 +48,6 @@ The primary focus of development will be to learn various technologies in use in
 |--|Config problems|20m|
 |--|Modal|15m|
 |--|Attribution|5m|
-|Total|--|26h15m|
+|30.7.2020|Planning callback, state, and source of truth|20m|
+|--|Implementing reusable inputs and state management in edit modal|45m|
+|Total|--|27h20m|
