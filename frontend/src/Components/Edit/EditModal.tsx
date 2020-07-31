@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react'
+import React, { useState, FormEvent, useEffect } from 'react'
 import { character } from '../../Types';
 import TextInput from './TextInput';
 import NumberInput from './NumberInput';
@@ -6,10 +6,11 @@ import AbilityInput from './AbilityInput';
 
 export interface Props {
     modal_callback: () => void;
+    handle_submit: (event: FormEvent, character: character) => void;
     character: character;
 }
 
-const EditModal = ({ modal_callback, character }: Props) => {
+const EditModal = ({ modal_callback, character, handle_submit }: Props) => {
     const [tentative_character, set_tentative] = useState(character);
 
     const handle_change = (event: FormEvent) => {
@@ -27,9 +28,9 @@ const EditModal = ({ modal_callback, character }: Props) => {
             // Find the ability we're targeting
             let [unimporatnt_variable, ability] = target.name.split(' ');
             // Update tentative abilities
-            abilities = {...abilities, [ability]: value};
+            abilities = { ...abilities, [ability]: value };
             // Update tentative character with tentative abilities
-            set_tentative({...tentative_character, abilities: abilities});
+            set_tentative({ ...tentative_character, abilities: abilities });
             console.log('Updated nested attribute ' + target.name + '\nNew value: ' + value)
         } else {
             // If the targeted attribute is not nested, a simple [] access is enough
@@ -37,6 +38,7 @@ const EditModal = ({ modal_callback, character }: Props) => {
             console.log('Updated ' + target.name + '\nNew value: ' + value);
         }
     }
+
 
     return (
         <div className='modal is-active'>
@@ -79,6 +81,14 @@ const EditModal = ({ modal_callback, character }: Props) => {
                         <div className='box'>
                             <p className='has-text-centered mb-2'>Ability scores</p>
                             <AbilityInput abilities={tentative_character.abilities} change_handler={handle_change} />
+                        </div>
+                        <div className="field is-grouped">
+                            <div className="control">
+                                <button className="button is-primary" onClick={(event) => handle_submit(event, tentative_character)}>Submit</button>
+                            </div>
+                            <div className="control">
+                                <button className="button is-link is-danger" onClick={modal_callback}>Cancel</button>
+                            </div>
                         </div>
                     </form>
                 </div>

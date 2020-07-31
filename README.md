@@ -51,4 +51,6 @@ The primary focus of development will be to learn various technologies in use in
 |30.7.2020|Planning callback, state, and source of truth|20m|
 |--|Implementing reusable inputs and state management in edit modal|45m|
 |31.7.2020|Working on lifting state up, targeting nested attributes and writing reusable callbacks|5h|
-|Total|--|32h20m|
+|--|Updating "actual" aka top-level state (multiple levels of state and callbacks are fun)|2h|
+|--|Better user feedback|10m|
+|Total|--|34h30m|

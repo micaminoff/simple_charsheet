@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import Header from './Components/Header';
 import AbilityRow from './Components/AbilityRow';
 import Skills from './Components/Skills';
@@ -11,22 +11,34 @@ import CharacterInfo from './Components/CharacterInfo';
 import CombatBox from './Components/CombatBox';
 import EditModal from './Components/Edit/EditModal';
 import Footer from './Components/Footer'
+import Message from './Components/Message'
 
 
 
 const App = () => {
 
-  const [show_modal, set_modal] = useState(true);
-  const hero: character = data.characters[0];
+  const [show_edit_modal, set_edit_modal] = useState(true);
+  const [show_message, set_message] = useState(false);
+  const [hero, update_hero] = useState(data.characters[0]);
 
-  const toggle_modal = () => (
-    set_modal(!show_modal)
+  const toggle_edit_modal = () => (
+    set_edit_modal(!show_edit_modal)
   );
+
+  const handle_submit = (event: FormEvent, character: character) => {
+    event.preventDefault();
+    update_hero(character);
+    toggle_edit_modal();
+    set_message(true);
+    setTimeout(() => {
+      set_message(false)
+    }, 3000);
+  }
 
   return (
     <div className='App'>
-      {show_modal  ? <EditModal modal_callback={toggle_modal} character={hero}/> : ''}
-      <Header name={hero.name} level={hero.level} race={hero.race} dnd_class={hero.dnd_class} modal_callback={toggle_modal} />
+      {show_edit_modal ? <EditModal modal_callback={toggle_edit_modal} character={hero} handle_submit={handle_submit} /> : ''}
+      <Header name={hero.name} level={hero.level} race={hero.race} dnd_class={hero.dnd_class} modal_callback={toggle_edit_modal} />
       <section className='section character'>
         <AbilityRow abilities={hero.abilities} />
         <div className='columns'>
@@ -51,7 +63,7 @@ const App = () => {
             />
           </div>
         </div>
-
+      {show_message ? <Message /> : ''}
       </section>
       <Footer />
     </div>

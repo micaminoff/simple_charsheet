@@ -40,4 +40,9 @@ $dark: #363636;
     border-radius: 100% !important;
 }
 
+.notification {
+    position: fixed !important;
+    bottom: 15px;
+}
+
 @import "../node_modules/bulma/bulma.sass";
