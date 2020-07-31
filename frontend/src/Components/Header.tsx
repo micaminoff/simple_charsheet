@@ -20,8 +20,9 @@ const Header = ({ name = '', level = 0, race = '', dnd_class = '', modal_callbac
                         <span className='subtitle'> Level {level} {race} {dnd_class} </span>
                     </h1>
                 </div>
-                <div className='level-right button edit_icon is-primary'>
-                    <span className='icon' onClick={modal_callback}>
+                
+                <div className='level-right button edit_icon is-primary' onClick={modal_callback}>
+                    <span className='icon' >
                         <FontAwesomeIcon icon={faPen} size='lg' className='edit_iicon' />
                     </span>
 

@@ -67,6 +67,7 @@
         "inventory": ["Bag of Holding", "Oil Flask", "100 gp"],
         "atk_bonus": 4,
         "dmg_bonus": 4,
-        "dmg_die": "1d8"
+        "dmg_die": "1d8",
+        "age": 43
     }
 ]}

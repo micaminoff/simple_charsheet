@@ -16,7 +16,7 @@ import Footer from './Components/Footer'
 
 const App = () => {
 
-  const [show_modal, set_modal] = useState(false);
+  const [show_modal, set_modal] = useState(true);
   const hero: character = data.characters[0];
 
   const toggle_modal = () => (

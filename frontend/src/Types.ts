@@ -80,4 +80,5 @@ export interface character {
     atk_bonus: number;
     dmg_bonus: number;
     dmg_die: string;
+    age: number;
 }
