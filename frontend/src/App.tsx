@@ -1,4 +1,4 @@
-import React, { useState, FormEvent, useEffect } from 'react';
+import React, { useState, FormEvent } from 'react';
 import Header from './Components/Header';
 import AbilityRow from './Components/AbilityRow';
 import Skills from './Components/Skills';
@@ -43,7 +43,7 @@ const App = () => {
         <AbilityRow abilities={hero.abilities} />
         <div className='columns'>
           <div className='column is-one-quarter'>
-            <Skills proficiencies={hero.proficiencies} proficiency_bonus={hero.proficiency_bonus} abilities={hero.abilities} />
+            <Skills skills={hero.skills} proficiency_bonus={hero.proficiency_bonus} abilities={hero.abilities} />
           </div>
           <div className='column'>
             <CombatStats ac={hero.ac} initiative={hero.initiative} speed={hero.speed} />
@@ -60,6 +60,7 @@ const App = () => {
               features={hero.features}
               feats={hero.feats}
               inventory={hero.inventory}
+              proficiency_bonus={hero.proficiency_bonus}
             />
           </div>
         </div>

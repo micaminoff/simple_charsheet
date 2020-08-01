@@ -12,22 +12,22 @@ export interface Props {
 const render_icon = (ability: string) => {
     let icon: IconProp;
     switch (ability) {
-        case 'STR':
+        case 'Strength':
             icon = faDumbbell;
             break;
-        case 'DEX':
+        case 'Dexterity':
             icon = faUserNinja;
             break;
-        case 'CON':
+        case 'Constitution':
             icon = faMedkit;
             break;
-        case 'INT':
+        case 'Intelligence':
             icon = faHatWizard;
             break;
-        case 'WIS':
+        case 'Wisdom':
             icon = faBookOpen;
             break;
-        case 'CHA':
+        case 'Charisma':
             icon = faCommentDots;
             break;
         default:

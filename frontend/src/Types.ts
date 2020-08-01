@@ -4,24 +4,24 @@ export interface hp {
 };
 
 export interface abilities {
-    str: number;
-    dex: number;
-    con: number;
-    int: number;
-    wis: number;
-    cha: number;
+    strength: number;
+    dexterity: number;
+    constitution: number;
+    intelligence: number;
+    wisdom: number;
+    charisma: number;
 };
 
-export interface proficiencies {
+export interface skills {
     // 0 = not proficient
     // 1 = proficient
     // 2 = expert
-    str: number;
-    dex: number;
-    con: number;
-    int: number;
-    wis: number;
-    cha: number;
+    strength: number;
+    dexterity: number;
+    constitution: number;
+    intelligence: number;
+    wisdom: number;
+    charisma: number;
 
     acrobatics: number;
     animal_handling: number;
@@ -68,7 +68,7 @@ export interface character {
     speed: number;
     hp: hp;
     abilities: abilities;
-    proficiencies: proficiencies;
+    skills: skills;
     hit_dice: hit_dice;
     death_saves: death_saves;
     languages: string[];
@@ -81,4 +81,5 @@ export interface character {
     dmg_bonus: number;
     dmg_die: string;
     age: number;
+    size: string;
 }

@@ -12,19 +12,19 @@ const AbilityInput = ({ abilities, change_handler }: Props) => (
             <div className='field'>
                 <label className='label'>Strength</label>
                 <div className='control'>
-                    <input className='input' name='abilities str' type='number' value={abilities.str} onChange={change_handler}></input>
+                    <input className='input' name='abilities strength' type='number' value={abilities.strength} onChange={change_handler}></input>
                 </div>
             </div>
             <div className='field'>
                 <label className='label'>Dexterity</label>
                 <div className='control'>
-                    <input className='input' name='abilities dex' type='number' value={abilities.dex} onChange={change_handler}></input>
+                    <input className='input' name='abilities dexterity' type='number' value={abilities.dexterity} onChange={change_handler}></input>
                 </div>
             </div>
             <div className='field'>
                 <label className='label'>Constitution</label>
                 <div className='control'>
-                    <input className='input' name='abilities con' type='number' value={abilities.con} onChange={change_handler}></input>
+                    <input className='input' name='abilities constitution' type='number' value={abilities.constitution} onChange={change_handler}></input>
                 </div>
             </div>
         </div>
@@ -32,19 +32,19 @@ const AbilityInput = ({ abilities, change_handler }: Props) => (
             <div className='field'>
                 <label className='label'>Intelligence</label>
                 <div className='control'>
-                    <input className='input' name='abilities int' type='number' value={abilities.int} onChange={change_handler}></input>
+                    <input className='input' name='abilities intelligence' type='number' value={abilities.intelligence} onChange={change_handler}></input>
                 </div>
             </div>
             <div className='field'>
                 <label className='label'>Wisdom</label>
                 <div className='control'>
-                    <input className='input' name='abilities wis' type='number' value={abilities.wis} onChange={change_handler}></input>
+                    <input className='input' name='abilities wisdom' type='number' value={abilities.wisdom} onChange={change_handler}></input>
                 </div>
             </div>
             <div className='field'>
                 <label className='label'>Charisma</label>
                 <div className='control'>
-                    <input className='input' name='abilities cha' type='number' value={abilities.cha} onChange={change_handler}></input>
+                    <input className='input' name='abilities charisma' type='number' value={abilities.charisma} onChange={change_handler}></input>
                 </div>
             </div>
         </div>

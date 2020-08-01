@@ -23,7 +23,6 @@ const render_bonus = (ability: number, proficient: number, bonus: number) => {
             {modifier(ability) + (proficient * bonus)}
         </span>
     )
-
 }
 
 const SkillBox = ({ skill, proficient = 0, ability = 0, bonus = 0 }: Props) => (

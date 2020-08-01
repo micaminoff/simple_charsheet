@@ -6,16 +6,16 @@ export interface Props {
     abilities: abilities;
 }
 
-const AbilityRow = ({ abilities = {str: 0, dex: 0, con: 0, int: 0, wis: 0, cha: 0} }: Props) => (
+const AbilityRow = ({ abilities = {strength: 0, dexterity: 0, constitution: 0, intelligence: 0, wisdom: 0, charisma: 0} }: Props) => (
     <div className='box has-text-centered'>
         Abilities
         <nav className='level atribute_row'>
-            <AbilityBox ability_name='STR' ability_val={abilities.str} />
-            <AbilityBox ability_name='DEX' ability_val={abilities.dex} />
-            <AbilityBox ability_name='CON' ability_val={abilities.con} />
-            <AbilityBox ability_name='INT' ability_val={abilities.int} />
-            <AbilityBox ability_name='WIS' ability_val={abilities.wis} />
-            <AbilityBox ability_name='CHA' ability_val={abilities.cha} />
+            <AbilityBox ability_name='Strength' ability_val={abilities.strength} />
+            <AbilityBox ability_name='Dexterity' ability_val={abilities.dexterity} />
+            <AbilityBox ability_name='Constitution' ability_val={abilities.constitution} />
+            <AbilityBox ability_name='Intelligence' ability_val={abilities.intelligence} />
+            <AbilityBox ability_name='Wisdom' ability_val={abilities.wisdom} />
+            <AbilityBox ability_name='Charisma' ability_val={abilities.charisma} />
         </nav>
     </div>
 );
